@@ -73,7 +73,7 @@ When Crime Occurs
 Linear Regression Analysis for Hypothesis Testing
 - With all the coefficients calculated through my logistic regression, the best way to assess my hypothesis is to example the results. 
 
-Results:
+Results
 - I analyzed the relationship between a set of independent variables (features) and a binary outcome, such as "Arrest" or "Not Arrested." The coefficients in the logistic regression model represent the strength and direction of the relationship between each feature and the likelihood of an arrest occurring.
 - A simple sort of the coefficients revealed that the top 8 crimes with the LEAST LIKELY arrest rate were Burglary, Theft, Criminal Damage, Robbery and Motor Vehicle Theft, Kidnapping, Deceptive Practice and Stalking.
   
