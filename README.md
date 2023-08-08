@@ -11,7 +11,6 @@ The Chicago Crime Database is a comprehensive repository of crime-related data c
 
 Data Collection: The Chicago Crime Database is a product of collaborative efforts between the Chicago Police Department (CPD) and other relevant agencies. It aggregates a vast amount of crime-related information, including incident reports, arrest records, case details, and offender profiles. The data collection process is ongoing, ensuring that the database remains up-to-date and relevant for crime analysis.
 
-
 The Data
 The City of Chicago maintains a robust dataset recording incidents of crime that occurred in the city. This data is extracted from the Chicago Police Department’s CLEAR (Citizen Law Enforcement Analysis and Reporting) system. 
 The dataset records more than 7,846,809 criminal incidents. Much of the recorded criminal activity is accompanied by additional data to include, but not limited to: Case Numbers, DTG, Block, IUCR, Primary Type, Description, Location Description, Arrest, Domestic, Beat, District, Ward, Community Area, FBI Code, X,Y Coordinates, Year, Records Update DTGs. 
@@ -20,7 +19,6 @@ Hypothesis Test
 My NULL Hypothesis is: For all crimes and reported incidents in this dataset, there will be no relationship between any of the independent variables the occurrences of arrest.
 My ALTERNATE Hypothesis is: For all crimes and reported incidents in this dataset, there is a strong relationship between the independent variables and the occurrences of arrest.
 As I performed my Exploratory Data Analysis I implemented statistic modeling based off logistic regression to either confirm or reject my Null hypothesis. 
-
 
 Exploratory Data Analysis
 After importing and cleaning my data using panda, one of my first goals was to determine how many different unique values and categories of data were present in the dataset. The column Primary Type contains a list of 36 criminal incidents, ranging from Theft as the most common to Ritualism and Non-Criminal as the least common. 
@@ -44,12 +42,21 @@ Community Area [78] - A Community Area refers to a geographic region within the 
   by the year 2015.
 - From 2015 to 2019, crime rate remained constant and then between 2020 and 2021 there was another significant drop.
 - A possible explanation for this was the Covid-19 lockdowns and changing in policing and recording crimes during that time period so it does not necessarily mean that 
-  Crimes were not being committed, only that they were possibly not being recorded. 
-- Also of note, of all 36 crime categories, the top 10 crimes represented 91.57% of all crimes. 
+  Crimes were not being committed, only that they were possibly not being recorded.
+  
+  ![Total_Crimes_By_Year_alt](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/d2d791f1-d04c-444a-8bc2-08419060de6b)
+  ![10_most_frequent_crimes_pie](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/d191daa6-ced9-4130-abe6-e2685d0aa426)
+
+
+- Also of note, of all 36 crime categories, the top 10 crimes represented 91.57% of all crimes.
 - The top 10 most frequent crimes dwarfed all other, with Theft, Battery and Criminal Damage representing just over half of all recorded incidents. 
 
 Most Common Crimes
-- To explore further and with more specificity, I calculated the top 5 most common crimes that were recorded. They too, showed a gradual decrease in with theft, battery and narcotics showing the strongest decline. 
+- To explore further and with more specificity, I calculated the top 5 most common crimes that were recorded. They too, showed a gradual decrease in with theft, battery and narcotics showing the strongest decline.
+  
+![crime_type_total_crime](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/1546d525-c554-439a-b0b4-1e8e017ecf50)
+![sexual_assaults](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/851997a4-7312-46c7-b1da-3c727898f0db)
+
 - Criminal sexual assault crimes, however, were discovered to be an extreme outlier to my EDA, where there was an increase of 2,454% from 2012 to 2022. I created a separate chart as to not drastically skew the first chart.
 
 
@@ -57,7 +64,11 @@ When Crime Occurs
 - This heatmap shows the relationship between the day of the week and time of day where a crime is most likely to occur. There are several important takeaways from this data.
 - We can see that crimes are least likely to be committed during the weekday between the hours of 0100 and 0700 and slightly more likely during the same time period on the weekends.
 - Noon and Midnight seem to have the strongest probability for a crime to occur daily
-- The days of the week show that crime is more likely to occur on Friday evenings from 1800 to 2200 with Tuesday and Wednesday not far behind. 
+- The days of the week show that crime is more likely to occur on Friday evenings from 1800 to 2200 with Tuesday and Wednesday not far behind.
+  
+![crime_trends_by_day_week_hour](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/5696fa53-d1b0-43a7-851e-4c221ef2b2b7)
+![crime_trends_by_month_year](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/2544e829-c6bf-4de7-aa25-59407ef5d08b)
+  
 
 Linear Regression Analysis for Hypothesis Testing
 - With all the coefficients calculated through my logistic regression, the best way to assess my hypothesis is to example the results. 
@@ -65,13 +76,19 @@ Linear Regression Analysis for Hypothesis Testing
 Results:
 - I analyzed the relationship between a set of independent variables (features) and a binary outcome, such as "Arrest" or "Not Arrested." The coefficients in the logistic regression model represent the strength and direction of the relationship between each feature and the likelihood of an arrest occurring.
 - A simple sort of the coefficients revealed that the top 8 crimes with the LEAST LIKELY arrest rate were Burglary, Theft, Criminal Damage, Robbery and Motor Vehicle Theft, Kidnapping, Deceptive Practice and Stalking.
+  
+![probability_of_arrest](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/3c55b93d-db7a-4016-a2f2-b717816d5ee3)
+![probability_of_arrest_loc](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/4149a01d-c1c5-4ea6-9f46-841a2eb4c9c9)
+  
 - The top 8 crimes with the MOST LIKELY arrest rate were Narcotics, Prostitution, Liquor Law Violation, Gambling, Interference with Public Officer, Concealed Carry License Violation, Weapons Violation and Obscenity. 
 - The top 8 locations where arrest was MOST LIKELY was Department Store, Drug Store, Grocery Food Store, Chicago Transit Authority (CTA) Platform, Train Depot, Convenience Store, Warehouse and CTA Station 
-- The top 8 locations where arrest was LEAST LIKELY was Other (Specify), Nursing/Retirement Homes, ATMs, Residences, Athletic Club, Aircraft and Medical/Dental offices. 
 
 Arrest Probability Heatmap and Matrix
 - For added granular data analysis, I cross-referenced the coefficients of crimes and their locations to create an intersectional heatmap. This visual representation shows the combinations of crime and location with the 
-  probability of arrest. Each cell represents the probability, expressed as a percentage, of an arrest occurring when a specific crime is associated with a particular location. 
+  probability of arrest. Each cell represents the probability, expressed as a percentage, of an arrest occurring when a specific crime is associated with a particular location.
+  
+![prob_of_being_arrested_heatmap_coef](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/80cc48e9-55a4-4d71-9da0-5ec6d76f8b71)
+
 - Through our exploratory data analysis of arrest data through the application of logistic regression modeling, valuable and interesting insights have been obtained into this relationship. The 2 bar charts show the top and 
   bottom 8 most significant values for crime type and data location, clearly illustrating the coefficient deviation from the results expected in our null hypothesis. The crime and location heatmap further invalidate our null 
   hypothesis, showing a clear and decisive relationship between crime types, the locations where they are committed and the probability for arrest.
