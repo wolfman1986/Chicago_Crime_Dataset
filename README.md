@@ -26,25 +26,56 @@ Exploratory Data Analysis
 After importing and cleaning my data using panda, one of my first goals was to determine how many different unique values and categories of data were present in the dataset. The column Primary Type contains a list of 36 criminal incidents, ranging from Theft as the most common to Ritualism and Non-Criminal as the least common. 
 
 Feature Definition And Their Unique Value Count
-Date [2001-2022] - All records use the date format 06/21/2023 08:00:00 PM
+Date [2001-2022] - All records use the date format 06/21/2023 08:00:00 PM., The first timestamp is 2001-01-01 00:00:00 and the last timestamp is 2022-12-31 23:55:00
 Block [63085] - In the context of urban planning and geographical references, a "block" typically refers to a bounded area of land within a city that is surrounded by streets or other physical boundaries. 
 Primary Type [36] - Category of crime. Examples in this dataset include, but limited to, Theft, Robbery, Narcotics, Battery, Burlgary, Criminal Sexaul Assault and Arson
 Description [548] - Provides additional details about the type or nature of the reported crime incident. 
 Location Description [227] - The specific place or area where a crime incident occurred.
-Arrest [TRUE/FALSE]
-Domestic [TRUE/FALSE]
+Arrest [TRUE/FALSE] - A TRUE value means an arrest was made. A FALSE value means an arrest was not made.
+Domestic [TRUE/FALSE] A TRUE value means that this crime was categorized as Domestic. A FALSE value means that it was not categorized as Domestic.
 Districts [24] - A districts can refer to different administrative divisions, each serving a specific purpose. Examples include Police Districts, School Districts, Community Areas, Voting Districts and Fire Districts   
 Ward [50] -  Each ward is represented by an alderman who advocates for the interests and concerns of the residents within that specific geographic area.
 Community Area [78] - A Community Area refers to a geographic region within the city of Chicago that is defined by the city's official Community Area boundaries. These boundaries were established by the City of Chicago for administrative and data collection purposes. Each community area represents a distinct neighborhood or area within the city.
 
 
-According to the data, from 2001 -2022, there was a gradual year-by-year negative percentage change until there was a strong uptick in 2014 and 2020. This could be attributed to racial tension changes in policing. 
+- According to the data, from 2001 -2022, there was a gradual year-by-year negative percentage change until there was a strong uptick in 2014 and 2020.
+- An initial analysis revealed that, contrary of popular opinion, crimes per year, at least those being recorded, has reduced by more than half since 2001. 
+- There are three significant changes in the yearly record, from 2001 to 2015 there was a gradual decrease of approximant 475,000 crimes per year to 260,000
+  by the year 2015.
+- From 2015 to 2019, crime rate remained constant and then between 2020 and 2021 there was another significant drop.
+- A possible explanation for this was the Covid-19 lockdowns and changing in policing and recording crimes during that time period so it does not necessarily mean that 
+  Crimes were not being committed, only that they were possibly not being recorded. 
+- Also of note, of all 36 crime categories, the top 10 crimes represented 91.57% of all crimes. 
+- The top 10 most frequent crimes dwarfed all other, with Theft, Battery and Criminal Damage representing just over half of all recorded incidents. 
 
-The top 10 most frequent crimes dwarfed all other, with Theft, Battery and Criminal Damage representing just over half of all recorded incidents. 
+Most Common Crimes
+- To explore further and with more specificity, I calculated the top 5 most common crimes that were recorded. They too, showed a gradual decrease in with theft, battery and narcotics showing the strongest decline. 
+- Criminal sexual assault crimes, however, were discovered to be an extreme outlier to my EDA, where there was an increase of 2,454% from 2012 to 2022. I created a separate chart as to not drastically skew the first chart.
+
 
 When Crime Occurs
-After importing and cleaning my data use pandas, one of my first goals was to determine whether there was any correlation between criminal activity, the time of day and day of the week. To answer this, I had to extract the day of the week and hour from the DTG value entries and group the data by day of the week and hour, and then get the count of crimes for each group. Perhaps unsurprisingly, the resulting heatmap shows that criminal activity is least likely to occur during the early hours of the morning, with peak times at noon and midnight. 
+- This heatmap shows the relationship between the day of the week and time of day where a crime is most likely to occur. There are several important takeaways from this data.
+- We can see that crimes are least likely to be committed during the weekday between the hours of 0100 and 0700 and slightly more likely during the same time period on the weekends.
+- Noon and Midnight seem to have the strongest probability for a crime to occur daily
+- The days of the week show that crime is more likely to occur on Friday evenings from 1800 to 2200 with Tuesday and Wednesday not far behind. 
 
-Due to the immense amount of data, I decided to become much more specific in my analysis, taking focus on all incidents where the crime was categorized as Domestic. As defined by the U.S. Department of Justice: “Domestic violence is a pattern of abusive behavior in any relationship that is used by one partner to gain or maintain power and control over another intimate partner.” More detailed definitions can be found at Office on Violence Against Women (OVW) | Domestic Violence (justice.gov).
-In the dataset, the total number of occurrences where domestic was listed as a factor, amounts to 1,063,990. The number one domestic crime, unsurprisingly, involves the presence of children. 
+Linear Regression Analysis for Hypothesis Testing
+- With all the coefficients calculated through my logistic regression, the best way to assess my hypothesis is to example the results. 
 
+Results:
+- I analyzed the relationship between a set of independent variables (features) and a binary outcome, such as "Arrest" or "Not Arrested." The coefficients in the logistic regression model represent the strength and direction of the relationship between each feature and the likelihood of an arrest occurring.
+- A simple sort of the coefficients revealed that the top 8 crimes with the LEAST LIKELY arrest rate were Burglary, Theft, Criminal Damage, Robbery and Motor Vehicle Theft, Kidnapping, Deceptive Practice and Stalking.
+- The top 8 crimes with the MOST LIKELY arrest rate were Narcotics, Prostitution, Liquor Law Violation, Gambling, Interference with Public Officer, Concealed Carry License Violation, Weapons Violation and Obscenity. 
+- The top 8 locations where arrest was MOST LIKELY was Department Store, Drug Store, Grocery Food Store, Chicago Transit Authority (CTA) Platform, Train Depot, Convenience Store, Warehouse and CTA Station 
+- The top 8 locations where arrest was LEAST LIKELY was Other (Specify), Nursing/Retirement Homes, ATMs, Residences, Athletic Club, Aircraft and Medical/Dental offices. 
+
+Arrest Probability Heatmap and Matrix
+- For added granular data analysis, I cross-referenced the coefficients of crimes and their locations to create an intersectional heatmap. This visual representation shows the combinations of crime and location with the 
+  probability of arrest. Each cell represents the probability, expressed as a percentage, of an arrest occurring when a specific crime is associated with a particular location. 
+- Through our exploratory data analysis of arrest data through the application of logistic regression modeling, valuable and interesting insights have been obtained into this relationship. The 2 bar charts show the top and 
+  bottom 8 most significant values for crime type and data location, clearly illustrating the coefficient deviation from the results expected in our null hypothesis. The crime and location heatmap further invalidate our null 
+  hypothesis, showing a clear and decisive relationship between crime types, the locations where they are committed and the probability for arrest.
+
+Conclusion
+- Based on our analysis, we reject our null hypothesis (H0) as the results demonstrated a non-random association between crime types, locations, and arrest probabilities. To put it simply, certain combinations of criminal 
+  activity and their location exhibit higher or lower probabilities of arrests. 
