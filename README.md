@@ -1,4 +1,6 @@
-# Chicago_Crime_Dataset
+# Chicago Crime Dataset 2001-2002
+dataset source: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2
+
 Galvanize Data Analytics Immersive Capstone
 
 Background & Motivation
