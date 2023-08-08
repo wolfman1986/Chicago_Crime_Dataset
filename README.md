@@ -25,7 +25,7 @@ As I performed my Exploratory Data Analysis I implemented statistic modeling bas
 Exploratory Data Analysis
 After importing and cleaning my data using panda, one of my first goals was to determine how many different unique values and categories of data were present in the dataset. The column Primary Type contains a list of 36 criminal incidents, ranging from Theft as the most common to Ritualism and Non-Criminal as the least common. 
 
-Feature Definition And Their Unique Value Count
+# Feature Definition And Their Unique Value Count
 - Date [2001-2022] - All records use the date format 06/21/2023 08:00:00 PM., The first timestamp is 2001-01-01 00:00:00 and the last timestamp is 2022-12-31 23:55:00
 - Block [63085] - In the context of urban planning and geographical references, a "block" typically refers to a bounded area of land within a city that is surrounded by streets or other physical boundaries. 
 - Primary Type [36] - Category of crime. Examples in this dataset include, but limited to, Theft, Robbery, Narcotics, Battery, Burlgary, Criminal Sexaul Assault and Arson
