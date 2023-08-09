@@ -87,7 +87,7 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
 
 ![probability_of_arrest](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/c1f72c31-6b65-4a13-b2a8-aa7f341a9926)
 
-- In this modification of the previous graph, the values represented are the strongest deviations for locations where crimes occur.
+- In this modification of the previous graph, locations are represented.
 
 ![probability_of_arrest_loc](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/c9e9286a-4601-4371-b156-391118545a1e)
 
