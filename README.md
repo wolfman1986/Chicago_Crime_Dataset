@@ -42,11 +42,14 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
   Crimes were not being committed, only that they were possibly not being recorded.
   
   ![Total_Crimes_By_Year_alt](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/d2d791f1-d04c-444a-8bc2-08419060de6b)
+
+- Also of note, of all 36 crime categories, the top 10 crimes represented 91.57% of all crimes.
+- The top 10 most frequent crimes dwarfed all other, with Theft, Battery and Criminal Damage representing just over half of all recorded incidents.
+
   ![10_most_frequent_crimes_pie](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/d191daa6-ced9-4130-abe6-e2685d0aa426)
 
 
-- Also of note, of all 36 crime categories, the top 10 crimes represented 91.57% of all crimes.
-- The top 10 most frequent crimes dwarfed all other, with Theft, Battery and Criminal Damage representing just over half of all recorded incidents. 
+
 
 ### Most Common Crimes
 - To explore further and with more specificity, I calculated the top 5 most common crimes that were recorded. They too, showed a gradual decrease in with theft, battery and narcotics showing the strongest decline.
