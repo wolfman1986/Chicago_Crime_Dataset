@@ -57,7 +57,7 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
 ![crime_type_total_crime](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/1546d525-c554-439a-b0b4-1e8e017ecf50)
 
 - Criminal sexual assault crimes, however, were discovered to be an extreme outlier to my EDA, where there was an increase of 2,454% from 2012 to 2022. I created a separate chart as to not drastically skew the first chart.
-- 
+  
 ![sexual_assaults](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/851997a4-7312-46c7-b1da-3c727898f0db)
 
 
