@@ -15,8 +15,6 @@ dataset source: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Pres
 - The City of Chicago maintains a robust dataset recording incidents of crime that occurred in the city. This data is extracted from the Chicago Police Department’s CLEAR (Citizen Law Enforcement Analysis and Reporting) system. 
 The dataset records more than 7,846,809 criminal incidents. Much of the recorded criminal activity is accompanied by additional data to include, but not limited to: Case Numbers, DTG, Block, IUCR, Primary Type, Description, Location Description, Arrest, Domestic, Beat, District, Ward, Community Area, FBI Code, X,Y Coordinates, Year, Records Update DTGs. 
 
-
-
 ### Exploratory Data Analysis
 - After importing and cleaning my data using panda, one of my first goals was to determine how many different unique values and categories of data were present in the dataset. The column Primary Type contains a list of 36 criminal incidents, ranging from Theft as the most common to Ritualism and Non-Criminal as the least common. 
 
@@ -32,6 +30,7 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
 - Ward [50] -  Each ward is represented by an alderman who advocates for the interests and concerns of the residents within that specific geographic area.
 - Community Area [78] - A Community Area refers to a geographic region within the city of Chicago that is defined by the city's official Community Area boundaries. These boundaries were established by the City of Chicago for 
   administrative and data collection purposes. Each community area represents a distinct neighborhood or area within the city.
+
 
 ### Initial Overview
 - According to the data, from 2001 -2022, there was a gradual year-by-year negative percentage change until there was a strong uptick in 2014 and 2020.
