@@ -82,11 +82,11 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
 
 ### Results
 - I analyzed the relationship between a set of independent variables (features) and a binary outcome, such as "Arrest" or "Not Arrested." The coefficients in the logistic regression model represent the strength and direction of the relationship between each feature and the likelihood of an arrest occurring.
--The blue bars extending to the right represent crime where arrest is MORE LIKELY. The red bars represent the opposite, arrest is LESS LIKELY. 
+- The blue bars extending to the right represent crime where arrest is MORE LIKELY. The red bars represent the opposite, arrest is LESS LIKELY. 
 ![image](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/f264791c-5690-4f36-9f1a-005e6c4b75af)
-
-![image](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/8dc3b213-fb02-4ab7-b423-3e4aeba862aa)
 - In this modification of the previous graph, the values represented are the strongest deviations for locations where crimes occur.
+![image](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/8dc3b213-fb02-4ab7-b423-3e4aeba862aa)
+
 
 ![probability_of_arrest](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/3c55b93d-db7a-4016-a2f2-b717816d5ee3)
 ![probability_of_arrest_loc](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/4149a01d-c1c5-4ea6-9f46-841a2eb4c9c9)
