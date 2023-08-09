@@ -33,7 +33,7 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
 - Community Area [78] - A Community Area refers to a geographic region within the city of Chicago that is defined by the city's official Community Area boundaries. These boundaries were established by the City of Chicago for 
   administrative and data collection purposes. Each community area represents a distinct neighborhood or area within the city.
 
-
+### Initial Overview
 - According to the data, from 2001 -2022, there was a gradual year-by-year negative percentage change until there was a strong uptick in 2014 and 2020.
 - An initial analysis revealed that, contrary of popular opinion, crimes per year, at least those being recorded, has reduced by more than half since 2001. 
 - There are three significant changes in the yearly record, from 2001 to 2015 there was a gradual decrease of approximant 475,000 crimes per year to 260,000
