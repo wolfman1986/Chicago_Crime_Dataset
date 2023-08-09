@@ -9,16 +9,16 @@ dataset source: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Pres
 ### The Dataset
 - The Chicago Crime Database is a comprehensive repository of crime-related data collected and maintained by law enforcement agencies in the city of Chicago, Illinois, USA. The database serves as a critical tool for researchers, policymakers, and law enforcement professionals to analyze crime trends, identify patterns, and develop effective strategies to enhance public safety and well-being.
 
-Data Collection The Chicago Crime Database is a product of collaborative efforts between the Chicago Police Department (CPD) and other relevant agencies. It aggregates a vast amount of crime-related information, including incident reports, arrest records, case details, and offender profiles. The data collection process is ongoing, ensuring that the database remains up-to-date and relevant for crime analysis.
+- Data Collection The Chicago Crime Database is a product of collaborative efforts between the Chicago Police Department (CPD) and other relevant agencies. It aggregates a vast amount of crime-related information, including incident reports, arrest records, case details, and offender profiles. The data collection process is ongoing, ensuring that the database remains up-to-date and relevant for crime analysis.
 
 ### The Data
-The City of Chicago maintains a robust dataset recording incidents of crime that occurred in the city. This data is extracted from the Chicago Police Department’s CLEAR (Citizen Law Enforcement Analysis and Reporting) system. 
+- The City of Chicago maintains a robust dataset recording incidents of crime that occurred in the city. This data is extracted from the Chicago Police Department’s CLEAR (Citizen Law Enforcement Analysis and Reporting) system. 
 The dataset records more than 7,846,809 criminal incidents. Much of the recorded criminal activity is accompanied by additional data to include, but not limited to: Case Numbers, DTG, Block, IUCR, Primary Type, Description, Location Description, Arrest, Domestic, Beat, District, Ward, Community Area, FBI Code, X,Y Coordinates, Year, Records Update DTGs. 
 
 
 
 ### Exploratory Data Analysis
-After importing and cleaning my data using panda, one of my first goals was to determine how many different unique values and categories of data were present in the dataset. The column Primary Type contains a list of 36 criminal incidents, ranging from Theft as the most common to Ritualism and Non-Criminal as the least common. 
+- After importing and cleaning my data using panda, one of my first goals was to determine how many different unique values and categories of data were present in the dataset. The column Primary Type contains a list of 36 criminal incidents, ranging from Theft as the most common to Ritualism and Non-Criminal as the least common. 
 
 ### Feature Definition And Their Unique Value Count
 - Date [2001-2022] - All records use the date format 06/21/2023 08:00:00 PM., The first timestamp is 2001-01-01 00:00:00 and the last timestamp is 2022-12-31 23:55:00
