@@ -82,21 +82,21 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
 
 ### Results
 - I analyzed the relationship between a set of independent variables (features) and a binary outcome, such as "Arrest" or "Not Arrested." The coefficients in the logistic regression model represent the strength and direction of the relationship between each feature and the likelihood of an arrest occurring.
-- The blue bars extending to the right represent crime where arrest is MORE LIKELY. The red bars represent the opposite, arrest is LESS LIKELY. 
-![image](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/f264791c-5690-4f36-9f1a-005e6c4b75af)
-- In this modification of the previous graph, the values represented are the strongest deviations for locations where crimes occur.
-![image](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/8dc3b213-fb02-4ab7-b423-3e4aeba862aa)
-
-
-![probability_of_arrest](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/3c55b93d-db7a-4016-a2f2-b717816d5ee3)
-![probability_of_arrest_loc](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/4149a01d-c1c5-4ea6-9f46-841a2eb4c9c9)
   
+- The blue bars extending to the right represent crime where arrest is MORE LIKELY. The red bars represent the opposite, arrest is LESS LIKELY. 
+
+![probability_of_arrest](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/c1f72c31-6b65-4a13-b2a8-aa7f341a9926)
+
+- In this modification of the previous graph, the values represented are the strongest deviations for locations where crimes occur.
+
+![probability_of_arrest_loc](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/c9e9286a-4601-4371-b156-391118545a1e)
 
 ### Arrest Probability Heatmap and Matrix
 - For added granular data analysis, I cross-referenced the coefficients of crimes and their locations to create an intersectional heatmap. This visual representation shows the combinations of crime and location with the 
   probability of arrest. Each cell represents the probability, expressed as a percentage, of an arrest occurring when a specific crime is associated with a particular location.
   
-![prob_of_being_arrested_heatmap_coef](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/80cc48e9-55a4-4d71-9da0-5ec6d76f8b71)
+![prob_of_being_arrested_heatmap_pct](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/fe6c1f38-1859-4390-8f56-71bf4107de48)
+
 
 - Through our exploratory data analysis of arrest data through the application of logistic regression modeling, valuable and interesting insights have been obtained into this relationship. The 2 bar charts show the top and 
   bottom 8 most significant values for crime type and data location, clearly illustrating the coefficient deviation from the results expected in our null hypothesis. The crime and location heatmap further invalidate our null 
