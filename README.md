@@ -3,7 +3,7 @@ dataset source: https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Pres
 
 ## Galvanize Data Analytics Immersive Capstone
 
-###Background & Motivation
+### Background & Motivation
 - According to the Chicago Sun*Times, through analyzing crime statistics, Chicago had its deadliest year in 2021 since in nearly 30 years. There is no singular answer as to why Chicago is subject to a substantially higher amount of crime compared to other major cities. We frequently hear on the news, internet, and social media about prevalent criminal activity in Chicago that includes violent crimes, gun violence, homicides, drug addiction and more. Additionally, while some criminal offenders are put in jail, a 2018 report showed that 43% of those released from prison in Illinois will be convicted of another crime and return to prison.
 
 - To gain a better understanding of the situation, I analyzed a crime data from the city of Chicago from January 1st, 2001, to July 14th, 2023. I was curious to see if there were any correlations to certain crimes, locations and arrest rates and the time of day these crimes were most likely to occur. 
