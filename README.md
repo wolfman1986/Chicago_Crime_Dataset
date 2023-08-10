@@ -100,6 +100,7 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
 
 - The bar charts viewed in the previous slides clearly illustrate there is a relationship between arrest rates and the remaining features, which in this example, are isolated to crime type and location. 
 
+
 - As seen in the previous two slides, the top crime was narcotics while the top location was department store. We can see in this combination in the heatmap as the intersection indicates, that department stores are central to, and the primary location of the top crimes identified in this analysis.
 
 - To conclude, this graph shows a clear and decisive relationship between crime types, the locations where they are committed, and the probability for arrest.
