@@ -94,15 +94,16 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
 
 
 ### Arrest Probability Heatmap and Matrix
-- For added granular data analysis, I cross-referenced the coefficients of crimes and their locations to create an intersectional heatmap. This visual representation shows the combinations of crime and location with the 
-  probability of arrest. Each cell represents the probability, expressed as a percentage, of an arrest occurring when a specific crime is associated with a particular location.
+- For added data granularity, I cross-referenced the probability of  the top crimes and locations to create an intersectional heatmap. This visual representation shows the combinations of crime and location with the probability of arrest. Each cell represents the probability, expressed as a percentage, of an arrest occurring when a specific crime is associated with a particular location. 
   
 ![prob_of_being_arrested_heatmap_pct](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/fe6c1f38-1859-4390-8f56-71bf4107de48)
 
+- The bar charts viewed in the previous slides clearly illustrate there is a relationship between arrest rates and the remaining features, which in this example, are isolated to crime type and location. 
 
-- Through our exploratory data analysis of arrest data through the application of logistic regression modeling, valuable and interesting insights have been obtained into this relationship. The 2 bar charts show the top and 
-  bottom 8 most significant values for crime type and data location, clearly illustrating the coefficient deviation from the results expected in our null hypothesis. The crime and location heatmap further invalidate our null 
-  hypothesis, showing a clear and decisive relationship between crime types, the locations where they are committed and the probability for arrest.
+- As seen in the previous two slides, the top crime was narcotics while the top location was department store. We can see in this combination in the heatmap as the intersection indicates, that department stores are central to, and the primary location of the top crimes identified in this analysis.
+
+- To conclude, this graph shows a clear and decisive relationship between crime types, the locations where they are committed, and the probability for arrest.
+
 
 ### Conclusion
 - Based on our analysis, we reject our null hypothesis (H0) as the results demonstrated a non-random association between crime types, locations, and arrest probabilities. To put it simply, certain combinations of criminal 
