@@ -70,7 +70,7 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
 - The days of the week show that crime is more likely to occur on Friday evenings from 1800 to 2200 with Tuesday and Wednesday not far behind.
   
 ![crime_trends_by_day_week_hour](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/5696fa53-d1b0-43a7-851e-4c221ef2b2b7)
-![crime_trends_by_month_year](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/2544e829-c6bf-4de7-aa25-59407ef5d08b)
+
 
 ### Hypothesis Test
 - My NULL Hypothesis is: For all crimes and reported incidents in this dataset, there will be no relationship between any of the independent variables the occurrences of arrest.
