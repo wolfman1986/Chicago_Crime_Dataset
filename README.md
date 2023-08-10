@@ -85,11 +85,13 @@ The dataset records more than 7,846,809 criminal incidents. Much of the recorded
   
 - The blue bars extending to the right represent crime where arrest is MORE LIKELY. The red bars represent the opposite, arrest is LESS LIKELY. 
 
-![probability_of_arrest](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/c1f72c31-6b65-4a13-b2a8-aa7f341a9926)
+![probability_of_arrest](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/7ce7fee4-d9e1-4286-b8e7-a59e72f49544)
+
 
 - In this modification of the previous graph, locations are represented.
 
-![probability_of_arrest_loc](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/c9e9286a-4601-4371-b156-391118545a1e)
+![probability_of_arrest_loc](https://github.com/wolfman1986/Chicago_Crime_Dataset/assets/36992236/0fca39ef-83a3-4b80-a821-c8fdc7a21026)
+
 
 ### Arrest Probability Heatmap and Matrix
 - For added granular data analysis, I cross-referenced the coefficients of crimes and their locations to create an intersectional heatmap. This visual representation shows the combinations of crime and location with the 
